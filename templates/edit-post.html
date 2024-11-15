@@ -1,0 +1,12 @@
+{% extends 'Base.html' %}
+
+{% block content %}
+<h2> Postni tahrirlash </h2>
+<form method="POST" >
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="update">
+
+</form>
+
+{% endblock content %}
